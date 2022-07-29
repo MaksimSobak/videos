@@ -7,28 +7,38 @@
     <title>Document</title>
     <style>
         body{
-            font-family: sans-serif;
+            background: #efefef;
         }
-        .flex-container{
-            display:inline-block;
-            padding: 20px;
-            background-color: #025955;
-            border-radius: 10px;
+
+        .box {
+            border-bottom: 2px solid black;
+            width: 100px;
+            height: 50px;
         }
-        .flex-item{
-            padding: 60px 15px;
-            background-color: #FDE8CD;
-            font-weight: bold;
-            margin: 10px;
-            border-radius: 10px;
+        .box-blue{
+            background-color: lightblue;
+        }
+        .box-red{
+            background-color: red;
+        }
+        .box-purple{
+            background-color: purple;
+        }
+        .box-orange{
+            background-color: orange;
+        }
+        .container{
+            display: flex;
+            background-color: gray;
         }
     </style>
 </head>
 <body>
-    <div class="flex-container">
-        <div class="flex-item">Flex item 1</div>
-        <div class="flex-item">Flex item 2</div>
-        <div class="flex-item">Flex item 3</div>
+    <div class="container">
+        <div class="box box-blue">1</div>
+        <div class="box box-red">2</div>
+        <div class="box box-purple">3</div>
+        <div class="box box-orange">4</div>
     </div>
 </body>
 </html>
